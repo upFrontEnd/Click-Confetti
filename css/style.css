@@ -1,0 +1,51 @@
+*, ::before, ::after {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+}
+
+.btn-confettis {
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 7px 0 rgb(160,160,160);
+    cursor: pointer;
+    font-size: 30px;
+    outline: none;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; height: 100px;
+}
+
+.btn-confettis:hover {
+    cursor: pointer;
+}
+
+.btn-confettis:active {
+    box-shadow: 0 0 0 rgb(160,160,160);
+    margin-top: 7px;
+}
+
+.output {
+    perspective: 1000px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.output div {
+    border-radius: 50%;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    width: 35px; height: 35px;
+    z-index: 10;
+}
